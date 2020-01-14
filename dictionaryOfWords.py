@@ -14,12 +14,18 @@ word_definitions = dict()
 Add several more words and their definitions
    Example: word_definitions["Awesome"] = "The feeling of students when they are learning Python"
 """
+word_definitions["phone"] = "An electronic device that my kids spend entirely too much time on."
+
+word_definitions["dinner"] = "The food that I just finished eating."
+
+word_definitions["computer"] = "Most commonly Windows or Apple machines used for professional, educational, and recreational purposes."
 
 """
 Use square bracket lookup to get the definition of two
 words and output them to the console with `print()`
 """
-
+print(word_definitions["dinner"])
+print(word_definitions["phone"])
 
 """
 Loop over the dictionary to get the following output:
@@ -27,3 +33,5 @@ Loop over the dictionary to get the following output:
     The definition of [WORD] is [DEFINITION]
     The definition of [WORD] is [DEFINITION]
 """
+for word in word_definitions:
+    print(f'The definition of {word} is {word_definitions[word]}')
